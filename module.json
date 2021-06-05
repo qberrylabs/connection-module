@@ -1,0 +1,13 @@
+{
+    "name": "ConnectionModule",
+    "alias": "connectionmodule",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ConnectionModule\\Providers\\ConnectionModuleServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
