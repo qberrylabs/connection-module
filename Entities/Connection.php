@@ -2,7 +2,7 @@
 
 namespace Modules\ConnectionModule\Entities;
 
-use App\Models\ConnectionStatus;
+
 use App\Models\User;
 use App\Traits\ClearsResponseCache;
 use Illuminate\Database\Eloquent\Model;
@@ -26,4 +26,5 @@ class Connection extends Model
     {
         return $this->belongsTo(User::class,'with_user_id');
     }
+
 }
