@@ -1,5 +1,6 @@
 {
-    "name": "nwidart/connectionmodule",
+    "name": "qberrylabs/connection-module",
+    "type": "laravel-module",
     "description": "",
     "authors": [
         {
