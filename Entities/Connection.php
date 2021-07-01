@@ -4,13 +4,12 @@ namespace Modules\ConnectionModule\Entities;
 
 
 use App\Models\User;
-use App\Traits\ClearsResponseCache;
+
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 class Connection extends Model
-{
-    use ClearsResponseCache;
+{   
     protected $fillable = [
         'user_id', 'connection_status_id', 'with_user_id','connection_date','created_at'
     ];
