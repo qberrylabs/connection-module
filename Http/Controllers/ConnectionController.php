@@ -94,8 +94,8 @@ class ConnectionController extends Controller
     {
         $connections=Connection::with(
             [
-                'getUserInformaionByFromConnection:id,full_name',
-                'getUserInformaionByWithConnection:id,full_name',
+                'getUserInformaionByFromConnection:id,full_name,first_name,last_name',
+                'getUserInformaionByWithConnection:id,full_name,first_name,last_name',
                 'getConnectionStatus:id,connection_status_name'
             ])
             ->orderBy('id','DESC')->get();

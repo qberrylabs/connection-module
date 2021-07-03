@@ -35,7 +35,6 @@ class SendConnectionAlert
             Mail::to($toUser)->send(new SendConnectionMail($type,$connection));
         } catch (\Throwable $th) {
             Session::flash('failed', 'The Email Has Not Sent');
-
         }
         try {
             $connectionNotificationTemplate=new ConnectionNotificationTemplate($type,$toUser,$connection);

@@ -2,13 +2,14 @@
 
 namespace Modules\ConnectionModule\Emails;
 
-use App\Http\Controllers\Connection\ConnectionTemplate;
+
 use Modules\CoreModule\Entities\Template;
 use Exception;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Modules\ConnectionModule\Http\Controllers\ConnectionTemplate;
 
 class SendConnectionMail extends Mailable
 {

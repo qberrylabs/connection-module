@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Connection;
+namespace Modules\ConnectionModule\Http\Controllers;
 
 use Modules\CoreModule\Entities\Template;
 use Modules\CoreModule\Traits\UserTrait;

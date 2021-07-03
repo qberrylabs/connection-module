@@ -36,8 +36,8 @@
                     @forelse ($connections as $connection)
                     <tr>
                         <td>#{{$connection->id}}</td>
-                        <td>{{$connection->getUserInformaionByFromConnection->full_name}}</td>
-                        <td>{{$connection->getUserInformaionByWithConnection->full_name}}</td>
+                        <td>{{$connection->getUserInformaionByFromConnection->first_name}} {{$connection->getUserInformaionByFromConnection->last_name}}</td>
+                        <td>{{$connection->getUserInformaionByWithConnection->first_name}} {{$connection->getUserInformaionByWithConnection->last_name}}</td>
                         <td><label class="badge badge-success">{{$connection->getConnectionStatus->connection_status_name}}</label></td>
                         <td>{{$connection->connection_date}}</td>
                       </tr>
